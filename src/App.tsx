@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import bgImage from "./assets/images/bg1.jpg";
 import Contacts from "./components/Contacts";
@@ -38,7 +38,12 @@ const App: React.FC = () => {
         />
 
         {/* Course Detail Page */}
-        <Route path="/#course" element={<CourseDetail />} />
+        <Route path="/courses/:id" element={<CourseDetail />} />
+
+        {/* Redirect everything else to homepage */}
+        <Route path="*" element={<Navigate to="/#course" replace />} />
+
+
       </Routes>
     </>
   );
