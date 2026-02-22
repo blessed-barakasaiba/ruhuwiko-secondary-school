@@ -1,33 +1,47 @@
-import Hero from "./components/hero"
-import Navbar from "./components/navbar"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
 import bgImage from "./assets/images/bg.avif";
-import HowItWork from "./components/how_it_work";
-import Features from "./components/features";
-import Pricing from "./components/pricing";
-import Testimonies from "./components/testimonies";
+import Contacts from "./components/Contacts";
+import Navbar from "./components/navbar";
+import Hero from "./components/hero";
+import About from "./components/about";
 import Footer from "./components/footer";
+import Course from "./components/courses";
+import CourseDetail from "./components/course_detail";
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div className="">
+    <>
+      <Navbar />
+      <Routes>
+        {/* Home Page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <div
+                className="bg-cover bg-center bg-no-repeat"
+                style={{ backgroundImage: `url(${bgImage})` }}
+              >
+                <div className="bg-black/60">
+                  <Hero />
+                </div>
+              </div>
 
-        <div className="bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bgImage})` }}>
+              <About />
+              <Course />
+              <Contacts />
+              <Footer />
+            </>
+          }
+        />
 
-          <div className="bg-black/60">
-            <Navbar />
+        {/* Course Detail Page */}
+        <Route path="/courses/:id" element={<CourseDetail />} />
+      </Routes>
+    </>
+  );
+};
 
-            <Hero />
-          </div>
-        </div>
-
-        <Features />
-        <HowItWork />
-        <Pricing />
-        <Testimonies />
-        <Footer />
-    </div>
-
-  )
-}
-
-export default App
+export default App;
