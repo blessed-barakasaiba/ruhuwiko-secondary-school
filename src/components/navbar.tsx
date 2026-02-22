@@ -5,7 +5,7 @@ import tpdf from "../assets/images/tpdf.png";
 import ruhuwiko from "../assets/images/ruhuwiko.jpeg";
 
 const NAV_LINKS = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "/ruhuwiko-secondary-school" },
   { label: "About", href: "#about" },
   { label: "Courses", href: "#course" },
   { label: "Contacts", href: "#contacts" },

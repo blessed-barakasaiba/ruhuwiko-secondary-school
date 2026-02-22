@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import bgImage from "./assets/images/bg.avif";
+import bgImage from "./assets/images/bg1.jpg";
 import Contacts from "./components/Contacts";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
@@ -38,7 +38,7 @@ const App: React.FC = () => {
         />
 
         {/* Course Detail Page */}
-        <Route path="/courses/:id" element={<CourseDetail />} />
+        <Route path="/#course" element={<CourseDetail />} />
       </Routes>
     </>
   );
