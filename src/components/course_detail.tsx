@@ -11,16 +11,10 @@ const courses: Course[] = [
   { id: 2, title: "PCB", description: "Physics, Chemistry, Biology stream for medical and life sciences." },
   { id: 3, title: "CBG", description: "Civics, Biology, Geography stream for social and natural sciences." },
   { id: 4, title: "HKL", description: "History, Kiswahili, Literature stream for arts and humanities." },
-  { id: 5, title: "CCE", description: "Commerce, Civics, Economics stream for business and finance studies." },
-  { id: 6, title: "PML", description: "Physics, Mathematics, Literature stream for mixed science and arts studies." },
-  { id: 7, title: "BSE", description: "Biology, Statistics, Economics for bio-statistics and economics careers." },
-  { id: 8, title: "GKL", description: "Geography, Kiswahili, Literature for arts and geography-focused students." },
-  { id: 9, title: "CMI", description: "Commerce, Mathematics, Informatics for business and IT studies." },
-  { id: 10, title: "PBE", description: "Physics, Biology, Economics for applied sciences and economics." },
-  { id: 11, title: "HCE", description: "History, Civics, Economics stream for humanities careers." },
-  { id: 12, title: "CML", description: "Civics, Mathematics, Literature stream for arts and social sciences." },
-  { id: 13, title: "BKL", description: "Biology, Kiswahili, Literature for arts and medical preparatory students." },
-  { id: 14, title: "PCB+", description: "Advanced Biology, Chemistry, Physics with research focus." },
+  { id: 5, title: "PMC", description: "Physics, Mathematics, Computer stream for mixed science with computer." },
+  { id: 6, title: "HGK", description: "Geography, Kiswahili, History for arts and geography-focused students." },
+  { id: 7, title: "HGE", description: "History, Geography, Economics stream for humanities careers." },
+  { id: 8, title: "EGM", description: "Economics, Geography, Mathematics stream for humanities careers." },
 ];
 
 const CourseDetail: React.FC = () => {
